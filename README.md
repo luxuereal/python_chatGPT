@@ -8,75 +8,30 @@
 
 Aggregation environment of multiple chatbots targeted for questions & answers or daily conversation. Support multiple API, including http, Wechat and Wechat Mass Platform.
 
-## Bots
-
-### QA
-
-- [elastic](https://github.com/archie-yu/ChatBot/blob/master/chatbot/bot/elastic.py)
-
-  > Based on FQA and tags match, using [Elasticsearch](https://github.com/elastic/elasticsearch) for searching tags.
-  >
-  > Run Elasticsearch before using this bot.
-
-### Talk
-
-- [tuling](https://github.com/archie-yu/ChatBot/blob/master/chatbot/bot/tuling.py)
-
-  > Based on [Tuling Robot](http://www.tuling123.com).
-  >
-  > Get your API key from the Tuling Robot [website](http://www.tuling123.com) and set it in the `ChatBot.cfg` before using this bot.
-
-## API
-
-- [http](https://github.com/archie-yu/ChatBot/blob/master/chatbot/util/service/http.py)
-
-  > Based on [Tornado](https://github.com/tornadoweb/tornado).
-  >
-  > Support Wechat Mass Platform API. (Get your token from the Wechat Mass Platform [website](https://mp.weixin.qq.com/) and set it in the `ChatBot.cfg`  if you want to support it)
-
-- [wechat](https://github.com/archie-yu/ChatBot/blob/master/chatbot/util/service/wechat.py)
-
-  > Based on [ItChat](https://github.com/littlecodersh/ItChat).
-  >
-  > Not recommanded as it may get some login problems.
-
-- [wechatmp](https://github.com/archie-yu/ChatBot/blob/master/chatbot/util/service/wechatmp.py)
-
-  > Based on [ItChatmp](https://github.com/littlecodersh/ItChatmp).
-  >
-  > Get your token, appID, appSecret from the Wechat Mass Platform [website](https://mp.weixin.qq.com/) and set them in the `ChatBot.cfg`  before using this API.
-
 ## Getting Started
 
 ### Settings
 
-- Dependencies
-
-  [`Elasticsearch`](https://github.com/elastic/elasticsearch) + [`IK Analysis`](https://github.com/medcl/elasticsearch-analysis-ik)
+- Tolos & Environment
   
-  - options
+  - tools(path : resources)
   
-    - [`Tornado`](https://github.com/tornadoweb/tornado) for http
+    - install VC_redist.x64.exe and python-3.11.3-amd64.exe
   
-    - [`ItChat`](https://github.com/littlecodersh/ItChat) for wechat
+  - environment
   
-    - [`ItChatmp`](https://github.com/littlecodersh/ItChatmp) for wechatmp
+    - simply double-click the environment.bat file
 
-- Clone project
 
-```
-git clone https://github.com/archie-yu/ChatBot.git
-```
+### Training & Manage Chat History
 
-- Copy [`ChatBot.cfg.template`](https://github.com/archie-yu/ChatBot/blob/master/ChatBot.cfg.template) to `ChatBot.cfg`
+- Training
 
-```
-cd ChatBot
-cp ChatBot.cfg.template ChatBot.cfg
-```
+  - Copy files need to train into docs directory
+  - Click train.bat file
+ 
+- Chat history
 
-- Configure `ChatBot.cfg`
-
-### Demo
-
-See [`demo.py`](https://github.com/archie-yu/ChatBot/blob/master/demo.py)
+  - On the UI you can see the chat history and download it as doc file.
+  - History docs will be download into root directory
+  
