@@ -14,11 +14,11 @@ Aggregation environment of multiple chatbots targeted for questions & answers or
 
 - Tolos & Environment
   
-  - tools(path : resources)
+  - Tools(path : resources)
   
     - install VC_redist.x64.exe and python-3.11.3-amd64.exe
   
-  - environment
+  - Environment
   
     - simply double-click the environment.bat file.
 
