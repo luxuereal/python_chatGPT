@@ -20,18 +20,18 @@ Aggregation environment of multiple chatbots targeted for questions & answers or
   
   - environment
   
-    - simply double-click the environment.bat file
+    - simply double-click the environment.bat file.
 
 
 ### Training & Manage Chat History
 
 - Training
 
-  - Copy files need to train into docs directory
-  - Click train.bat file
+  - Copy files need to train into docs directory.
+  - Click train.bat file.
  
 - Chat history
 
   - On the UI you can see the chat history and download it as doc file.
-  - History docs will be download into root directory
+  - History docs will be download into root directory.
   
